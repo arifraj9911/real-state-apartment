@@ -1,9 +1,12 @@
-// import { useContext } from "react";
-import { NavLink } from "react-router-dom";
-// import { AuthContext } from "../../provider/AuthProvider";
+import { useContext } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
+import { CgProfile } from "react-icons/cg";
 
 const Header = () => {
-  // const {user} = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
+  const navigate = useNavigate();
+  console.log(user);
   const menu = (
     <>
       <li>
@@ -21,7 +24,7 @@ const Header = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 mt-5">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -53,7 +56,35 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1">{menu}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Login</a>
+        {user ? (
+          <span className="flex items-center gap-4">
+            {" "}
+            {user?.emailVerified ? (
+              <div className="avatar tooltip" data-tip={user?.displayName}>
+                <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src={user?.photoURL} />
+                </div>
+              </div>
+            ) : (
+              <div className="tooltip" data-tip={user?.displayName}>
+                <CgProfile className="text-4xl" />
+              </div>
+            )}{" "}
+            <button
+              onClick={() => {
+                logOut();
+                navigate("/login");
+              }}
+              className="btn btn-outline"
+            >
+              Sign Out
+            </button>
+          </span>
+        ) : (
+          <Link className="btn btn-outline" to="/login">
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );

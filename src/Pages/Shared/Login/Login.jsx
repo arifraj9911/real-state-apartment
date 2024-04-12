@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../provider/AuthProvider";
 import { Link } from "react-router-dom";
-import { FaGoogle } from "react-icons/fa";
+import { FaGithub, FaGoogle } from "react-icons/fa";
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -32,13 +32,16 @@ const Login = () => {
     googleSignIn()
       .then((res) => {
         console.log(res.user);
-        setErrors('');
         toast.success('user login successful');
       })
       .catch((err) => {
-        setErrors(err.message);
+        toast.error(err.message);
       });
   };
+
+  const handleGithubSubmit = ()=>{
+    console.log('github login');
+  }
   return (
     <div className="flex justify-center items-center ">
       <div className="w-2/6  shadow-xl rounded-xl p-10 my-16">
@@ -83,10 +86,14 @@ const Login = () => {
           </span>
         </div>
         <div className="divider">OR</div>
-        <div onClick={handleGoogleSubmit} className="flex justify-center">
-          <button className="btn btn-outline">
+        <div  className="flex flex-col gap-2">
+          <button onClick={handleGoogleSubmit} className="btn btn-outline">
             <FaGoogle />
             <span>Continue with Google</span>
+          </button>
+          <button onClick={handleGithubSubmit} className="btn btn-outline">
+            <FaGithub />
+            <span>Continue with Github</span>
           </button>
         </div>
       </div>
