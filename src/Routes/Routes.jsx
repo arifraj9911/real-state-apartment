@@ -3,6 +3,9 @@ import Root from "../Root/Root";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Shared/Login/Login";
 import Register from "../Pages/Shared/Register/Register";
+import Blog from "../Pages/Blog/Blog";
+import Update from "../Pages/Update/Update";
+import Profile from "../Pages/Profile/Profile";
 
 export const router = createBrowserRouter([
     {
@@ -12,6 +15,18 @@ export const router = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>
+            },
+            {
+                path:'/blog',
+                element:<Blog></Blog>
+            },
+            {
+                path:'/update',
+                element:<Update></Update>
+            },
+            {
+                path:'/profile',
+                element:<Profile></Profile>
             },
             {
                 path:'/login',
