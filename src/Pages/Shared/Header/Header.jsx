@@ -1,6 +1,9 @@
+// import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+// import { AuthContext } from "../../provider/AuthProvider";
 
 const Header = () => {
+  // const {user} = useContext(AuthContext);
   const menu = (
     <>
       <li>
