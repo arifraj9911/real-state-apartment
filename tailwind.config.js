@@ -5,7 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: { 'background': "url('https://i.ibb.co/JCmp3p9/room-1.jpg')"}
+    },
   },
   plugins: [require("daisyui")],
  }
