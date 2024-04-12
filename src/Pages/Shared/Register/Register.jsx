@@ -2,11 +2,13 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../provider/AuthProvider";
 import { Link } from "react-router-dom";
-import { FaGoogle } from "react-icons/fa";
+// import { FaGoogle } from "react-icons/fa";
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
-  const { createUser, googleSignIn } = useContext(AuthContext);
-  const { register, formState, handleSubmit } = useForm();
+  const { createUser } = useContext(AuthContext);
+  const { register, formState, handleSubmit,reset } = useForm();
   const { errors } = formState;
   const onSubmit = (data) => {
     // e.preventDefault();
@@ -17,30 +19,33 @@ const Register = () => {
     createUser(email, password)
       .then((res) => {
         console.log(res.user);
+        toast.success('User create successfully');
+        reset();
       })
       .catch((err) => {
-        console.error(err.message);
+        toast.error(err.message);
       });
   };
 
-  const handleGoogleSubmit = () => {
-    googleSignIn()
-      .then((res) => {
-        console.log(res.user);
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
-  };
+//   const handleGoogleSubmit = () => {
+//     googleSignIn()
+//       .then((res) => {
+//         console.log(res.user);
+//       })
+//       .catch((err) => {
+//         console.log(err.message);
+//       });
+//   };
+
   return (
     <div className="flex justify-center items-center ">
-      <div className="w-2/5 border-2 rounded-xl p-10 my-10">
-        <h2 className="text-3xl mb-5 text-center font-bold">
+      <div className="w-2/6 shadow-xl  rounded-xl p-10 my-16">
+        <h2 className="text-3xl mb-8 text-center font-bold">
           Register Your Account
         </h2>
         <hr />
         <form
-          className=" flex flex-col gap-6 mt-8 "
+          className=" flex flex-col gap-4 mt-12 "
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="flex flex-col gap-1 text-[#403F3F]">
@@ -83,7 +88,7 @@ const Register = () => {
             <p className="text-sm text-red-500">{errors.password?.message}</p>
           </div>
 
-          <div>
+          <div className="mt-2">
             <input
               className="btn btn-accent w-full"
               type="submit"
@@ -99,13 +104,13 @@ const Register = () => {
             </Link>{" "}
           </span>
         </div>
-        <div className="divider">OR</div>
+        {/* <div className="divider">OR</div>
         <div onClick={handleGoogleSubmit} className="flex justify-center">
           <button className="btn btn-outline">
             <FaGoogle />
             <span>Continue with Google</span>
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

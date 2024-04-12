@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "../Pages/Shared/Header/Header";
+import { ToastContainer } from 'react-toastify';
 
 
 const Root = () => {
@@ -7,6 +8,7 @@ const Root = () => {
         <div className="max-w-screen-xl mx-auto">
             <Header></Header>
             <Outlet></Outlet>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
