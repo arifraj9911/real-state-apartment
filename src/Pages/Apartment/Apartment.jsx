@@ -1,10 +1,12 @@
 import PropTypes from "prop-types";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaChartArea } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Apartment = ({ apartment }) => {
-  const { estate_title, price, status, area, location, estate_image } =
+  const { estate_title, price, status, area,id, location, estate_image } =
     apartment;
+    const navigate = useNavigate();
   return (
     <div className="shadow-xl relative flex flex-col">
       <div>
@@ -28,7 +30,7 @@ const Apartment = ({ apartment }) => {
         </span>
       </div>
       <div className="p-4 w-full">
-        <button className="btn w-full rounded-none text-lg font-semibold btn-outline">
+        <button onClick={()=>navigate(`/apartment/${id}`)} className="btn w-full rounded-none text-lg font-semibold btn-outline">
           View Property
         </button>
       </div>

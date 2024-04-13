@@ -7,6 +7,7 @@ import Blog from "../Pages/Blog/Blog";
 import Update from "../Pages/Update/Update";
 import Profile from "../Pages/Profile/Profile";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import ApartmentDetails from "../Pages/ApartmentDetails/ApartmentDetails";
 
 export const router = createBrowserRouter([
     {
@@ -16,8 +17,13 @@ export const router = createBrowserRouter([
         children:[
             {
                 path:'/',
-                loader:()=>fetch('estate.json'),
+                loader:()=>fetch('../estate.json'),
                 element:<Home></Home>
+            },
+            {
+                path:'/apartment/:id',
+                loader:()=>fetch('../estate.json'),
+                element:<ApartmentDetails></ApartmentDetails>
             },
             {
                 path:'/blog',
