@@ -4,19 +4,21 @@ import { FaChartArea } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const Apartment = ({ apartment }) => {
-  const { estate_title, price, status, area,id, location, estate_image } =
+  const { estate_title, price, status, area, id, location, estate_image } =
     apartment;
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="shadow-xl relative flex flex-col">
       <div>
         <img src={estate_image} alt="" />
       </div>
       <div className="p-6 flex-grow">
-        <h2 className="text-lg font-bold text-[#636363]">{estate_title}</h2>
-        <div className="flex justify-between mt-4">
-          <span className="text-[#00aeff] text-xl font-light">{price}</span>
-          <span className="flex items-center gap-6 text-[#636363]">
+        <span className="text-[#00aeff]  text-2xl font-light">{price}</span>
+        <h2 className="text-xl  font-semibold mt-2 text-[#1a1a1a]">
+          {estate_title}
+        </h2>
+        <div className="flex flex-col gap-2 mt-4">
+          <span className="flex items-center justify-between gap-4 text-[#919191]">
             <span className="flex items-center gap-1">
               <FaLocationDot /> {location}
             </span>
@@ -30,7 +32,10 @@ const Apartment = ({ apartment }) => {
         </span>
       </div>
       <div className="p-4 w-full">
-        <button onClick={()=>navigate(`/apartment/${id}`)} className="btn w-full rounded-none text-lg font-semibold btn-outline">
+        <button
+          onClick={() => navigate(`/apartment/${id}`)}
+          className="btn w-full rounded-none text-lg font-semibold btn-outline"
+        >
           View Property
         </button>
       </div>
