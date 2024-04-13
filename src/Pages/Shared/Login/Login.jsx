@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const { signIn, googleSignIn } = useContext(AuthContext);
@@ -44,6 +45,9 @@ const Login = () => {
   }
   return (
     <div className="flex justify-center items-center ">
+      <Helmet>
+                <title>City Residence | Login</title>
+            </Helmet>
       <div className="w-2/6  shadow-xl rounded-xl p-10 my-16">
         <h2 className="text-3xl mb-8 text-center font-bold">Login</h2>
         <hr />
