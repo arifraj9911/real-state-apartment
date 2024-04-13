@@ -16,6 +16,7 @@ export const router = createBrowserRouter([
         children:[
             {
                 path:'/',
+                loader:()=>fetch('estate.json'),
                 element:<Home></Home>
             },
             {

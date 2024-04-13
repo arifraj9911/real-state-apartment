@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Modern Apartment with Stunning View",
+      "segment_name": "Luxury",
+      "description": "This modern apartment offers breathtaking views of the city skyline. With spacious rooms and state-of-the-art amenities, it's perfect for those seeking luxury living.",
+      "price": "$500,000",
+      "status": "sale",
+      "area": "2000 sq ft",
+      "location": "Downtown",
+      "facilities": ["living room", "swimming pool", "kitchen"],
+      "estate_image": "https://i.ibb.co/JCmp3p9/room-1.jpg"
+    },
+    {
+      "id": 2,
+      "estate_title": "Cozy Apartment in Historic District",
+      "segment_name": "Classic",
+      "description": "Located in the heart of the historic district, this cozy apartment boasts charm and character. Ideal for those who appreciate heritage architecture and a sense of community.",
+      "price": "$1,500/month",
+      "status": "rent",
+      "area": "1200 sq ft",
+      "location": "Old Town",
+      "facilities": ["living room", "kitchen"],
+      "estate_image": "https://i.ibb.co/JCmp3p9/room-1.jpg"
+    },
+    {
+      "id": 3,
+      "estate_title": "Spacious Penthouse with Panoramic Views",
+      "segment_name": "Luxury",
+      "description": "Experience the epitome of luxury living in this spacious penthouse offering panoramic views of the city. With high-end finishes and exclusive amenities, it's a haven for discerning individuals.",
+      "price": "$2,000,000",
+      "status": "sale",
+      "area": "3000 sq ft",
+      "location": "Skyline Heights",
+      "facilities": ["living room", "swimming pool", "gym", "kitchen", "balcony"],
+      "estate_image": "https://i.ibb.co/JCmp3p9/room-1.jpg"
+    },
+    {
+      "id": 4,
+      "estate_title": "Charming Studio Apartment",
+      "segment_name": "Affordable",
+      "description": "This charming studio apartment is perfect for urban dwellers seeking affordability without compromising on comfort. Conveniently located near public transportation and amenities.",
+      "price": "$900/month",
+      "status": "rent",
+      "area": "600 sq ft",
+      "location": "City Center",
+      "facilities": ["living room", "kitchen"],
+      "estate_image": "https://i.ibb.co/JCmp3p9/room-1.jpg"
+    },
+    {
+      "id": 5,
+      "estate_title": "Luxurious Waterfront Condo",
+      "segment_name": "Luxury",
+      "description": "Live the high life in this ",
+      "price": "$3,500,000",
+      "status": "sale",
+      "area": "2500 sq ft",
+      "location": "Marina District",
+      "facilities": ["living room", "swimming pool", "spa", "kitchen", "balcony"],
+      "estate_image": "https://i.ibb.co/JCmp3p9/room-1.jpg"
+    },
+    {
+      "id": 6,
+      "estate_title": "Elegant Townhouse in Gated Community",
+      "segment_name": "Premium",
+      "description": "This elegant townhouse offers privacy and security within a gated community. With meticulously landscaped gardens and upscale finishes, it's perfect for those who desire refined living.",
+      "price": "$1,200,000",
+      "status": "sale",
+      "area": "2200 sq ft",
+      "location": "Greenville",
+      "facilities": ["living room", "kitchen", "garden", "gym"],
+      "estate_image": "https://i.ibb.co/JCmp3p9/room-1.jpg"
+    }
+  ]
+  
