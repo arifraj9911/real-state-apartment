@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import { CgProfile } from "react-icons/cg";
+import coolBackground from "../../../assets/Images/cool7.png";
+import "./Header.css";
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -24,7 +26,15 @@ const Header = () => {
     </>
   );
   return (
-    <div className="navbar  sticky top-0 z-10  backdrop-filter backdrop-blur-lg bg-opacity-0 ">
+    <div
+      style={{
+        backgroundImage: `url(${coolBackground})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      className="navbar  sticky top-0  z-10 pt-4 pb-3 backdrop-filter backdrop-blur-lg bg-opacity-100 "
+    >
       <div className="navbar-start">
         <div className="dropdown z-10">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -45,15 +55,19 @@ const Header = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[16px] font-semibold"
           >
             {menu}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">City Residence</a>
+        <a className="btn btn-ghost text-3xl font-bold">
+          City<span className="text-[#77c720]">Residence</span>
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{menu}</ul>
+        <ul className="menu menu-horizontal px-1 text-[16px] font-semibold">
+          {menu}
+        </ul>
       </div>
       <div className="navbar-end">
         {user ? (
@@ -75,13 +89,16 @@ const Header = () => {
                 logOut();
                 navigate("/login");
               }}
-              className="btn btn-outline"
+              className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-3 px-6 rounded-md text-[16px] font-bold"
             >
               Sign Out
             </button>
           </span>
         ) : (
-          <Link className="btn btn-outline" to="/login">
+          <Link
+            className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-3 px-6 rounded-md text-[16px] font-bold"
+            to="/login"
+          >
             Login
           </Link>
         )}

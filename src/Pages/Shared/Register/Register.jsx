@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../provider/AuthProvider";
 import { Link } from "react-router-dom";
@@ -6,9 +6,11 @@ import { Link } from "react-router-dom";
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from "react-helmet-async";
+import { IoIosEye,IoIosEyeOff  } from "react-icons/io";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
+  const [showPass,setShowPass] = useState(false);
   const { register, formState, handleSubmit,reset } = useForm();
   const { errors } = formState;
   const onSubmit = (data) => {
@@ -78,9 +80,10 @@ const Register = () => {
           </div>
           <div className="flex flex-col gap-1 text-[#403F3F]">
             <label className="font-medium">Password</label>
+            <div className="w-full relative">
             <input
-              className="bg-[#F3F3F3] p-2 rounded-md outline-none "
-              type="password"
+              className="bg-[#F3F3F3] p-3 w-full rounded-md outline-none "
+              type={showPass ? 'text' : 'password'}
               {...register("password", {
                 pattern: {
                   value: /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/,
@@ -89,6 +92,9 @@ const Register = () => {
                 },
               })}
             />
+            <span className="absolute right-4 top-3 text-2xl" onClick={()=>setShowPass(!showPass)}>{showPass ? <IoIosEyeOff /> : <IoIosEye />}</span>
+            </div>
+            
             <p className="text-sm text-red-500">{errors.password?.message}</p>
           </div>
 

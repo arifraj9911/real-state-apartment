@@ -9,8 +9,8 @@ const Apartment = ({ apartment }) => {
   const navigate = useNavigate();
   return (
     <div className="shadow-xl relative flex flex-col">
-      <div>
-        <img src={estate_image} alt="" />
+      <div className="h-1/2 w-full">
+        <img className="h-full w-full" src={estate_image} alt="" />
       </div>
       <div className="p-6 flex-grow">
         <span className="text-[#00aeff]  text-2xl font-light">{price}</span>
@@ -34,7 +34,7 @@ const Apartment = ({ apartment }) => {
       <div className="p-4 w-full">
         <button
           onClick={() => navigate(`/apartment/${id}`)}
-          className="btn w-full rounded-none text-lg font-semibold btn-outline"
+          className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-3 px-6 w-full rounded-md text-lg font-semibold "
         >
           View Property
         </button>

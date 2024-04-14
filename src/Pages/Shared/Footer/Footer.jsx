@@ -11,7 +11,7 @@ const Footer = () => {
                 placeholder="your email"
                 className="input input-bordered join-item text-black"
               />
-              <button className="btn btn-primary join-item">Subscribe</button>
+              <button className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-3 px-6 rounded-md text-[16px] font-bold join-item">Subscribe</button>
             </div>
             <span className="text-gray-500 mt-1">
               *Offer available only for new customers

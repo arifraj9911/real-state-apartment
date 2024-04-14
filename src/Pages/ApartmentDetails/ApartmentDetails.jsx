@@ -85,7 +85,7 @@ const ApartmentDetails = () => {
                       <IoPricetags />
                     </span>
                     <span className="flex flex-col">
-                      <span className="font-semibold text-lg">
+                      <span className="font-semibold text-[16px]">
                         Apartment ID
                       </span>
                       <span>{apartment_id}</span>
@@ -96,7 +96,7 @@ const ApartmentDetails = () => {
                       <FaHouseUser />
                     </span>
                     <span className="flex flex-col">
-                      <span className="font-semibold text-lg">Type</span>
+                      <span className="font-semibold text-[16px]">Type</span>
                       <span>Apartment</span>
                     </span>
                   </span>
@@ -105,7 +105,7 @@ const ApartmentDetails = () => {
                       <FaCar />
                     </span>
                     <span className="flex flex-col">
-                      <span className="font-semibold text-lg">Parking</span>
+                      <span className="font-semibold text-[16px]">Parking</span>
                       <span>Yes</span>
                     </span>
                   </span>
@@ -114,7 +114,7 @@ const ApartmentDetails = () => {
                       <IoBedSharp />
                     </span>
                     <span className="flex flex-col">
-                      <span className="font-semibold text-lg">Bedroom</span>
+                      <span className="font-semibold text-[16px]">Bedroom</span>
                       <span>{bed}</span>
                     </span>
                   </span>
@@ -123,7 +123,7 @@ const ApartmentDetails = () => {
                       <FaBath />
                     </span>
                     <span className="flex flex-col">
-                      <span className="font-semibold text-lg">Bath</span>
+                      <span className="font-semibold text-[16px]">Bath</span>
                       <span>{bath}</span>
                     </span>
                   </span>
@@ -132,7 +132,7 @@ const ApartmentDetails = () => {
                       <FaChartArea />
                     </span>
                     <span className="flex flex-col">
-                      <span className="font-semibold text-lg">Area</span>
+                      <span className="font-semibold text-[16px]">Area</span>
                       <span>{area}</span>
                     </span>
                   </span>
@@ -141,7 +141,7 @@ const ApartmentDetails = () => {
                       <TbProgressAlert />
                     </span>
                     <span className="flex flex-col">
-                      <span className="font-semibold text-lg">Status</span>
+                      <span className="font-semibold text-[16px]">Status</span>
                       <span>{status}</span>
                     </span>
                   </span>
@@ -251,7 +251,7 @@ const ApartmentDetails = () => {
                   ></textarea>
                 </div>
                 <div className="mt-8">
-                  <button className="btn w-full  btn-outline">
+                  <button className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-3 px-6 w-full rounded-md">
                     Send Message
                   </button>
                 </div>
