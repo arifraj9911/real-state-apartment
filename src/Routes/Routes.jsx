@@ -4,8 +4,7 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Shared/Login/Login";
 import Register from "../Pages/Shared/Register/Register";
 import Blog from "../Pages/Blog/Blog";
-import Update from "../Pages/Update/Update";
-import Profile from "../Pages/Profile/Profile";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import ApartmentDetails from "../Pages/ApartmentDetails/ApartmentDetails";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
@@ -32,11 +31,7 @@ export const router = createBrowserRouter([
             },
             {
                 path:'/update',
-                element:<Update></Update>
-            },
-            {
-                path:'/profile',
-                element:<Profile></Profile>
+                element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
             },
             {
                 path:'/login',

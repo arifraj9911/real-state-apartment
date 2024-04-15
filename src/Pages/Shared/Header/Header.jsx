@@ -8,7 +8,7 @@ import "./Header.css";
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
   const navigate = useNavigate();
-  console.log(user);
+  // console.log(user);
   const menu = (
     <>
       <li>
@@ -17,12 +17,11 @@ const Header = () => {
       <li>
         <NavLink to="/blog">Blog</NavLink>
       </li>
-      <li>
-        <NavLink to="/update">Update</NavLink>
-      </li>
-      <li>
-        <NavLink to="/profile">Profile</NavLink>
-      </li>
+      {user && (
+        <li>
+          <NavLink to="/update">Update_Profile</NavLink>
+        </li>
+      )}
     </>
   );
   return (
@@ -73,7 +72,7 @@ const Header = () => {
         {user ? (
           <span className="flex items-center gap-4">
             {" "}
-            {user?.emailVerified ? (
+            {user?.photoURL ? (
               <div className="avatar tooltip" data-tip={user?.displayName}>
                 <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                   <img src={user?.photoURL} />

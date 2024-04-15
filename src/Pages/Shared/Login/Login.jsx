@@ -80,7 +80,7 @@ const Login = () => {
 
           <div className="mt-2">
             <input
-              className="btn btn-accent w-full"
+              className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-3 px-6 w-full rounded-md text-[16px] font-bold"
               type="submit"
               value="Login"
             />
