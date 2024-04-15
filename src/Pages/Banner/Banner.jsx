@@ -41,7 +41,9 @@ const Banner = () => {
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
                 repudiandae et a id nisi.
               </p>
-              <button className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-3 px-6 rounded-md">Know More</button>
+              <button className="bg-[#0075FF] hover:bg-[#2264b0] text-[16px] font-bold text-white py-3 px-6 rounded-md">
+                Know More
+              </button>
             </div>
           </div>
         </div>

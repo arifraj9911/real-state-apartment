@@ -8,6 +8,7 @@ import Update from "../Pages/Update/Update";
 import Profile from "../Pages/Profile/Profile";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import ApartmentDetails from "../Pages/ApartmentDetails/ApartmentDetails";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -23,7 +24,7 @@ export const router = createBrowserRouter([
             {
                 path:'/apartment/:id',
                 loader:()=>fetch('../estate.json'),
-                element:<ApartmentDetails></ApartmentDetails>
+                element:<PrivateRoute><ApartmentDetails></ApartmentDetails></PrivateRoute>
             },
             {
                 path:'/blog',
