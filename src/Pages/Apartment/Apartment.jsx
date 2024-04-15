@@ -8,7 +8,8 @@ const Apartment = ({ apartment }) => {
     apartment;
   const navigate = useNavigate();
   return (
-    <div className="shadow-xl relative flex flex-col">
+    <div data-aos="zoom-in" className="shadow-xl relative flex flex-col">
+      
       <div className="h-1/2 w-full">
         <img className="h-full w-full" src={estate_image} alt="" />
       </div>

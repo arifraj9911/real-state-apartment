@@ -4,7 +4,7 @@ import Apartment from "../Apartment/Apartment";
 const Apartments = ({ estates }) => {
   // console.log(estates);
   return (
-    <div className="my-32 max-w-screen-xl mx-auto">
+    <div  className="my-32 max-w-screen-xl mx-auto">
       <div className="flex flex-col items-center">
         <h2 className="text-4xl font-bold mb-2">Our Deals</h2>
         <p className="w-1/2 text-center">

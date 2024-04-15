@@ -16,6 +16,7 @@ import GoogleMapReact from "google-map-react";
 import { googleApiKey } from "../../GoogleApiKey/GoogleApiKey";
 import saleBanner from "../../assets/Images/sale_banner.jpg";
 
+
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const ApartmentDetails = () => {
   const estates = useLoaderData();
@@ -28,7 +29,7 @@ const ApartmentDetails = () => {
       lat: 10.99835602,
       lng: 77.01502627,
     },
-    zoom: 11,
+    zoom: 11, 
   };
   //   console.log(estate);
   const {
@@ -181,6 +182,7 @@ const ApartmentDetails = () => {
                     />
                   </GoogleMapReact>
                 </div>
+               
               </div>
             </div>
           </div>
