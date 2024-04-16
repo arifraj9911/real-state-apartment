@@ -15,7 +15,7 @@ const Apartment = ({ apartment }) => {
     estate_image,
     bath,
     bed,
-    segment_name
+    segment_name,
   } = apartment;
   const navigate = useNavigate();
   return (
@@ -23,28 +23,28 @@ const Apartment = ({ apartment }) => {
       <div className="h-[300px] w-full">
         <img className="h-full w-full" src={estate_image} alt="" />
       </div>
-      <div className="p-6 flex-grow">
-        <div >
-        <span className="text-[#00aeff]  text-2xl font-light">{price}</span>
-        <h2 className="text-xl  font-semibold mt-2 text-[#1a1a1a]">
-          {estate_title}
-        </h2>
-        </div>
-        <hr className="my-6 " />
-        <div className="flex flex-col gap-2 mt-4">
-          <div className="flex items-center justify-between gap-4 text-[#919191]">
+      <div className="p-5 flex-grow">
+        <div>
+          <div className="flex justify-between">
+            <span className="text-[#77c720]  text-2xl font-bold">{price}</span>
             <span className="flex items-center gap-1">
               <FaLocationDot /> {location}
             </span>
-            <span className="flex items-center gap-1">
+          </div>
+          <h2 className="text-[22px] lg:text-2xl  font-semibold mt-3 text-[#1a1a1a]">
+            {estate_title}
+          </h2>
+        </div>
+        <hr className="my-6 " />
+        <div className="flex flex-col gap-4 mt-4">
+          <div className="flex justify-between gap-4 items-center text-[#919191]">
+            <span className="flex items-center gap-2">
               <FaChartArea /> {area}
             </span>
-          </div>
-          <div className="flex gap-4 items-center text-[#919191]">
-            <span className="flex items-center gap-1">
+            <span className="flex items-center gap-2">
               <FaBath /> {bath} Bath
             </span>
-            <span className="flex items-center gap-1">
+            <span className="flex items-center gap-2">
               <IoBedSharp /> {bed} Bed
             </span>
           </div>

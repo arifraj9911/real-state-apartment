@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-// import './Banner.css'
+import './Banner.css'
 
 const Banner = () => {
   return (
@@ -38,17 +38,19 @@ const Banner = () => {
           }}
         >
           <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content w-4/5 flex justify-start  text-left text-white">
-            <div className="max-w-md">
-              <h1 className="mb-5 text-5xl font-bold">Luxurious Palace</h1>
-              <p className="mb-5">
+          <div className="hero-content w-4/5  flex justify-center items-center lg:justify-start text-left text-white">
+            <div className="max-w-lg px-2 lg:px-0">
+              <h1 className="mb-2 lg:mb-5 text-[30px] lg:text-5xl font-bold">Luxurious Palace</h1>
+              <p className="mb-5 text-xs leading-4 lg:leading-6 lg:text-[16px] ">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+                repudiandae.
               </p>
-              <button className="bg-[#0075FF] hover:bg-[#2264b0] text-[16px] font-bold text-white py-3 px-6 rounded-md ">
+             <div >
+             <button className="bg-[#0075FF] hover:bg-[#2264b0] text-[16px]  font-bold text-white py-2 lg:py-3 px-3 lg:px-6 rounded-md ">
                 Know More
               </button>
+             </div>
             </div>
           </div>
         </div>
@@ -61,15 +63,19 @@ const Banner = () => {
           }}
         >
           <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content w-4/5 flex justify-start  text-left text-white">
-            <div className="max-w-md">
-              <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-              <p className="mb-5">
+          <div className="hero-content w-4/5  flex justify-center items-center lg:justify-start text-left text-white">
+            <div className="max-w-lg px-2 lg:px-0">
+              <h1 className="mb-2 lg:mb-5 text-[30px] lg:text-5xl font-bold">Luxurious Palace</h1>
+              <p className="mb-5 text-xs leading-4 lg:leading-6 lg:text-[16px] ">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+                repudiandae.
               </p>
-              <button className="btn btn-primary">Get Started</button>
+             <div >
+             <button className="bg-[#0075FF] hover:bg-[#2264b0] text-[16px]  font-bold text-white py-2 lg:py-3 px-3 lg:px-6 rounded-md ">
+                Know More
+              </button>
+             </div>
             </div>
           </div>
         </div>
@@ -83,15 +89,19 @@ const Banner = () => {
         
         >
           <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content w-4/5 flex justify-start  text-left text-white">
-            <div className="max-w-md">
-              <h1 className="mb-5 text-5xl font-bold">Luxurious Palace </h1>
-              <p className="mb-5">
+          <div className="hero-content w-4/5  flex justify-center items-center lg:justify-start text-left text-white">
+            <div className="max-w-lg px-2 lg:px-0">
+              <h1 className="mb-2 lg:mb-5 text-[30px] lg:text-5xl font-bold">Luxurious Palace</h1>
+              <p className="mb-5 text-xs leading-4 lg:leading-6 lg:text-[16px] ">
                 Provident cupiditate voluptatem et in. Quaerat fugiat ut
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+                repudiandae.
               </p>
-              <button className="btn btn-primary">Get Started</button>
+             <div >
+             <button className="bg-[#0075FF] hover:bg-[#2264b0] text-[16px]  font-bold text-white py-2 lg:py-3 px-3 lg:px-6 rounded-md ">
+                Know More
+              </button>
+             </div>
             </div>
           </div>
         </div>
