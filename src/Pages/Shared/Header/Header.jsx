@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import { CgProfile } from "react-icons/cg";
-import coolBackground from "../../../assets/Images/cool7.png";
+import coolBG from '../../../assets/Images/cool-background.png'
 import "./Header.css";
 
 const Header = () => {
@@ -27,12 +27,12 @@ const Header = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${coolBackground})`,
+        backgroundImage: `url(${coolBG})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="navbar  sticky top-0  z-10  backdrop-filter backdrop-blur-lg bg-opacity-100 "
+      className="navbar text-white  sticky top-0 z-10   "
     >
       <div className="navbar-start">
         <div className="dropdown z-10">
@@ -58,7 +58,7 @@ const Header = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[16px] font-semibold"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[16px] text-black font-semibold"
           >
             {menu}
            

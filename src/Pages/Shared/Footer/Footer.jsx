@@ -1,9 +1,20 @@
+
+import coolBG from '../../../assets/Images/cool-background.png'
 const Footer = () => {
   return (
-    <div className="">
-      <footer className="footer flex flex-col lg:flex-row justify-between px-10 py-16  bg-[#141414] text-white">
+    <div
+      style={{
+        backgroundImage: `url(${coolBG})`,
+        backgroundPosition:'center',
+        backgroundSize:'cover'
+      }}
+      className="h-full"
+    >
+      <footer className="footer flex flex-col lg:flex-row justify-between px-10 py-16   text-white">
         <form>
-          <h6 className="font-bold text-2xl lg:text-3xl mb-3 ">Sign up & get 15% OFF</h6>
+          <h6 className="font-bold text-2xl lg:text-3xl mb-3 ">
+            Sign up & get 15% OFF
+          </h6>
           <fieldset className="form-control">
             <div className="join">
               <input
@@ -11,45 +22,49 @@ const Footer = () => {
                 placeholder="your email"
                 className="input input-bordered join-item text-black w-full"
               />
-              <button className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-2 lg:py-3 px-3 lg:px-6 rounded-md text-[16px] font-bold join-item">Subscribe</button>
+              <button className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-2 lg:py-3 px-3 lg:px-6 rounded-md text-[16px] font-bold join-item">
+                Subscribe
+              </button>
             </div>
-            <span className="text-gray-500 mt-1">
+            <span className="text-gray-300 mt-1">
               *Offer available only for new customers
             </span>
           </fieldset>
         </form>
         <nav>
           <h6 className="text-white text-lg font-semibold">Services</h6>
-          <a className="link link-hover text-gray-500">Branding</a>
-          <a className="link link-hover text-gray-500">Design</a>
-          <a className="link link-hover text-gray-500">Marketing</a>
-          <a className="link link-hover text-gray-500">Advertisement</a>
+          <a className="link link-hover text-gray-300">Branding</a>
+          <a className="link link-hover text-gray-300">Design</a>
+          <a className="link link-hover text-gray-300">Marketing</a>
+          <a className="link link-hover text-gray-300">Advertisement</a>
         </nav>
         <nav>
           <h6 className="text-white text-lg font-semibold">Company</h6>
-          <a className="link link-hover text-gray-500">About us</a>
-          <a className="link link-hover text-gray-500">Contact</a>
-          <a className="link link-hover text-gray-500">Jobs</a>
-          <a className="link link-hover text-gray-500">Press kit</a>
+          <a className="link link-hover text-gray-300">About us</a>
+          <a className="link link-hover text-gray-300">Contact</a>
+          <a className="link link-hover text-gray-300">Jobs</a>
+          <a className="link link-hover text-gray-300">Press kit</a>
         </nav>
         <nav>
           <h6 className="text-white text-lg font-semibold">Legal</h6>
-          <a className="link link-hover text-gray-500">Terms of use</a>
-          <a className="link link-hover text-gray-500">Privacy policy</a>
-          <a className="link link-hover text-gray-500">Cookie policy</a>
+          <a className="link link-hover text-gray-300">Terms of use</a>
+          <a className="link link-hover text-gray-300">Privacy policy</a>
+          <a className="link link-hover text-gray-300">Cookie policy</a>
         </nav>
       </footer>
-      <footer className="footer px-10 py-8 gap-8 border-t-2 border-black flex flex-col lg:flex-row text-center lg:text-left  justify-between items-center bg-[#141414] text-white ">
+      <footer className="footer px-10 py-8 gap-8  flex flex-col lg:flex-row text-center lg:text-left  justify-between items-center  text-white ">
         <aside className="items-center grid-flow-col">
           <p className="flex flex-col gap-2">
-            <span className="text-2xl lg:text-3xl font-bold">City Palace</span>
-            <span className="text-sm text-gray-400">
+            <span className="text-2xl lg:text-3xl font-bold">
+              City <span className="text-[#77c720]">Palace</span>{" "}
+            </span>
+            <span className="text-sm text-gray-300">
               More Trustable Real State Company
             </span>
           </p>
         </aside>
         <div>
-          <p className="text-gray-400">
+          <p className="text-gray-300">
             {" "}
             Copyright © 2024 - All right reserved by City Residence
           </p>
