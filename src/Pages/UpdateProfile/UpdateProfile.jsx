@@ -25,12 +25,12 @@ const UpdateProfile = () => {
   };
 
   return (
-    <div className="my-20 w-3/5 mx-auto">
+    <div className="my-20 lg:w-3/5 mx-auto">
       <Helmet>
         <title>City Residence | Update</title>
       </Helmet>
-      <div className="flex justify-center w-full border rounded-lg">
-        <div className="flex flex-col items-center w-full border-r-2 gap-4 shadow-lg p-8">
+      <div className="flex flex-col lg:flex-row justify-center w-full lg:border rounded-lg">
+        <div className="flex flex-col items-center w-full border-b-2 lg:border-r-2 gap-4 lg:shadow-lg p-8">
           <div className="avatar online mb-4">
             <div className="w-32 rounded-full">
               <img
@@ -48,7 +48,7 @@ const UpdateProfile = () => {
           <h4 className="text-lg">Email : {user?.email}</h4>
         </div>
 
-        <div className="flex flex-col items-center w-full shadow-lg p-10">
+        <div className="flex flex-col items-center w-full lg:shadow-lg p-10">
           <h2 className="text-3xl mb-8 font-semibold">Update</h2>
           <form
             onSubmit={handleSaveChange}

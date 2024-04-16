@@ -52,10 +52,10 @@ const ApartmentDetails = () => {
   return (
     <div className="bg-[#f8fafe] py-16">
       <div className="max-w-screen-xl mx-auto ">
-        <div className="flex justify-between w-2/3">
+        <div className="flex flex-col-reverse lg:flex-row justify-between  px-3 lg:px-0 lg:w-2/3">
           <div>
             <div className="flex items-center gap-4">
-              <h2 className="text-2xl font-bold">{estate_title}</h2>
+              <h2 className="text-[22px] lg:text-2xl font-bold">{estate_title}</h2>
               <span className="bg-[#77c720] px-6  py-1 text-white rounded-3xl">
                 {status}
               </span>
@@ -64,7 +64,7 @@ const ApartmentDetails = () => {
               <FaLocationDot /> {location}
             </div>
           </div>
-          <div>
+          <div className="flex lg:flex-col justify-between mb-2">
             <h3 className="text-3xl text-[#00aeff] mb-1">{price}</h3>
             <span className="flex items-center gap-2  text-lg">
               <FaChartArea />
@@ -80,7 +80,7 @@ const ApartmentDetails = () => {
             <div>
               <div className="bg-white px-8 py-12 border-b">
                 <h2 className="text-3xl font-bold mb-10">Overview</h2>
-                <div className="grid grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                   <span className="flex items-center gap-3">
                     <span className=" p-4 shadow-md text-xl rounded-lg text-[#20c7b6]">
                       <IoPricetags />
@@ -148,12 +148,12 @@ const ApartmentDetails = () => {
                   </span>
                 </div>
               </div>
-              <div className="bg-white px-8 py-12 border-b ">
-                <h2 className="text-3xl font-bold mb-10">Description</h2>
+              <div className="bg-white px-4 lg:px-8 py-10 lg:py-12 border-b ">
+                <h2 className="text-3xl font-bold mb-6 lg:mb-10">Description</h2>
                 <p>{description}</p>
               </div>
               <div className="bg-white px-8 py-12 border-b ">
-                <h2 className="text-3xl font-bold mb-10">
+                <h2 className="text-[22px] lg:text-3xl font-bold mb-6 lg:mb-10">
                   Features & Amenities
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -168,7 +168,7 @@ const ApartmentDetails = () => {
                 </div>
               </div>
               <div className="bg-white px-8 py-12">
-                <h2 className="text-3xl font-bold mb-10">Map Location</h2>
+                <h2 className="text-[22px] lg:text-3xl font-bold mb-10">Map Location</h2>
                 <div style={{ height: "100vh", width: "100%" }}>
                   <GoogleMapReact
                     bootstrapURLKeys={{ key: googleApiKey }}

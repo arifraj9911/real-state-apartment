@@ -32,7 +32,7 @@ const Header = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="navbar  sticky top-0  z-10 pt-4 pb-3 backdrop-filter backdrop-blur-lg bg-opacity-100 "
+      className="navbar  sticky top-0  z-10  backdrop-filter backdrop-blur-lg bg-opacity-100 "
     >
       <div className="navbar-start">
         <div className="dropdown z-10">
@@ -64,9 +64,9 @@ const Header = () => {
            
           </ul>
         </div>
-        <a className="btn btn-ghost text-2xl pr-0 gap-0 lg:gap-2 pl-1 lg:pl-4 lg:text-3xl font-bold">
-          City<span className="text-[#77c720]">Residence</span>
-        </a>
+        <Link to='/' className="btn btn-ghost text-[22px] pr-0 gap-0 lg:gap-2 pl-1 lg:pl-4 lg:text-3xl font-bold">
+          City<span className="text-[#77c720]">Palace</span>
+        </Link >
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-[16px] font-semibold">
@@ -78,7 +78,7 @@ const Header = () => {
           <span className="flex items-center gap-3 lg:gap-4">
             {" "}
             {user?.photoURL ? (
-              <div className="avatar tooltip" data-tip={user?.displayName}>
+              <div className="avatar tooltip tooltip-bottom tooltip-success" data-tip={user?.displayName}>
                 <div className="w-8 lg:w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                   <img src={user?.photoURL} />
                 </div>
