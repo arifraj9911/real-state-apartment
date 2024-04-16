@@ -36,7 +36,11 @@ const Header = () => {
     >
       <div className="navbar-start">
         <div className="dropdown z-10">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost lg:hidden p-0"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -59,7 +63,7 @@ const Header = () => {
             {menu}
           </ul>
         </div>
-        <a className="btn btn-ghost text-3xl font-bold">
+        <a className="btn btn-ghost text-xl pr-0 gap-0 pl-1 lg:pl-4 lg:text-3xl font-bold">
           City<span className="text-[#77c720]">Residence</span>
         </a>
       </div>
@@ -70,11 +74,11 @@ const Header = () => {
       </div>
       <div className="navbar-end">
         {user ? (
-          <span className="flex items-center gap-4">
+          <span className="flex items-center gap-3 lg:gap-4">
             {" "}
             {user?.photoURL ? (
               <div className="avatar tooltip" data-tip={user?.displayName}>
-                <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <div className="w-8 lg:w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                   <img src={user?.photoURL} />
                 </div>
               </div>
@@ -88,14 +92,14 @@ const Header = () => {
                 logOut();
                 navigate("/login");
               }}
-              className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-3 px-6 rounded-md text-[16px] font-bold"
+              className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-2 lg:py-3 px-4 lg:px-6 rounded-md text-[16px] font-bold"
             >
               Sign Out
             </button>
           </span>
         ) : (
           <Link
-            className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-3 px-6 rounded-md text-[16px] font-bold"
+            className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-2 lg:py-3 px-4 lg:px-6 rounded-md text-[16px] font-bold"
             to="/login"
           >
             Login
