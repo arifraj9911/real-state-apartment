@@ -64,9 +64,9 @@ const Register = () => {
       <Helmet>
         <title>City Residence | Register</title>
       </Helmet>
-      <div className="w-2/6 shadow-xl  rounded-xl p-10 my-16">
-        <h2 className="text-3xl mb-8 text-center font-bold">
-          Register Your Account
+      <div className="w-full lg:w-2/6 shadow-xl  rounded-xl p-10 my-16">
+        <h2 className="text-3xl lg:text-4xl mb-8 text-center font-bold">
+          Create Account
         </h2>
         <hr />
         <form

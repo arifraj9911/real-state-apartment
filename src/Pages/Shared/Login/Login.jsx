@@ -6,9 +6,12 @@ import { FaGithub, FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Helmet } from "react-helmet-async";
+import { IoIosEye, IoIosEyeOff } from "react-icons/io";
+
 
 const Login = () => {
   const { signIn, googleSignIn } = useContext(AuthContext);
+  const [showPass, setShowPass] = useState(false);
   const [errors, setErrors] = useState(null);
   const { register, handleSubmit, reset } = useForm();
   const location = useLocation();
@@ -26,7 +29,6 @@ const Login = () => {
         setErrors("");
         toast.success("user login successful");
         reset();
-        
       })
       .catch((err) => {
         setErrors(err.message);
@@ -53,8 +55,8 @@ const Login = () => {
       <Helmet>
         <title>City Residence | Login</title>
       </Helmet>
-      <div className="w-2/6  shadow-xl rounded-xl p-10 my-16">
-        <h2 className="text-3xl mb-8 text-center font-bold">Login</h2>
+      <div className="w-full lg:w-2/6  shadow-xl  p-10 my-16">
+        <h2 className="text-3xl lg:text-4xl mb-8 text-center font-bold">Login</h2>
         <hr />
         <form
           className=" flex flex-col gap-4 mt-12 "
@@ -68,15 +70,23 @@ const Login = () => {
               {...register("email", { required: true })}
             />
           </div>
-          <div className="flex flex-col gap-1 text-[#403F3F]">
+          <div className="flex flex-col gap-1 relative text-[#403F3F]">
             <label className="font-medium">Password</label>
             <input
               className="bg-[#F3F3F3] p-2 rounded-md outline-none "
-              type="password"
+              type={showPass ? "text" : "password"}
               {...register("password")}
             />
-            <p className="text-sm text-red-500">{errors}</p>
+            <span
+                className="absolute right-4 top-[36px] text-2xl"
+                onClick={() => setShowPass(!showPass)}
+              >
+                {showPass ? <IoIosEyeOff /> : <IoIosEye />}
+              </span>
+           
+            
           </div>
+          <p className="text-sm text-red-500">{errors}</p>
 
           <div className="mt-2">
             <input

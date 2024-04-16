@@ -1,17 +1,17 @@
 const Footer = () => {
   return (
-    <div className="hidden">
-      <footer className="footer flex justify-between px-10 py-16  bg-[#141414] text-white">
+    <div className="">
+      <footer className="footer flex flex-col lg:flex-row justify-between px-10 py-16  bg-[#141414] text-white">
         <form>
-          <h6 className="font-bold text-3xl mb-3 ">Sign up & get 15% OFF</h6>
-          <fieldset className="form-control w-80">
+          <h6 className="font-bold text-2xl lg:text-3xl mb-3 ">Sign up & get 15% OFF</h6>
+          <fieldset className="form-control">
             <div className="join">
               <input
                 type="text"
                 placeholder="your email"
-                className="input input-bordered join-item text-black"
+                className="input input-bordered join-item text-black w-full"
               />
-              <button className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-3 px-6 rounded-md text-[16px] font-bold join-item">Subscribe</button>
+              <button className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-2 lg:py-3 px-3 lg:px-6 rounded-md text-[16px] font-bold join-item">Subscribe</button>
             </div>
             <span className="text-gray-500 mt-1">
               *Offer available only for new customers
@@ -39,7 +39,7 @@ const Footer = () => {
           <a className="link link-hover text-gray-500">Cookie policy</a>
         </nav>
       </footer>
-      <footer className="footer px-10 py-8 border-t-2 border-black flex justify-between items-center bg-[#141414] text-white ">
+      <footer className="footer px-10 py-8 gap-8 border-t-2 border-black flex flex-col lg:flex-row text-center lg:text-left  justify-between items-center bg-[#141414] text-white ">
         <aside className="items-center grid-flow-col">
           <p className="flex flex-col gap-2">
             <span className="text-2xl font-bold">City Residence</span>

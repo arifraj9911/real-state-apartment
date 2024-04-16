@@ -61,9 +61,10 @@ const Header = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[16px] font-semibold"
           >
             {menu}
+           
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl pr-0 gap-0 pl-1 lg:pl-4 lg:text-3xl font-bold">
+        <a className="btn btn-ghost text-2xl pr-0 gap-0 lg:gap-2 pl-1 lg:pl-4 lg:text-3xl font-bold">
           City<span className="text-[#77c720]">Residence</span>
         </a>
       </div>
