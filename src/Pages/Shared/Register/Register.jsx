@@ -62,7 +62,7 @@ const Register = () => {
   return (
     <div className="flex justify-center items-center ">
       <Helmet>
-        <title>City Residence | Register</title>
+        <title>City Palace | Register</title>
       </Helmet>
       <div className="w-full lg:w-2/6 shadow-xl  rounded-xl p-10 my-16">
         <h2 className="text-3xl lg:text-4xl mb-8 text-center font-bold">

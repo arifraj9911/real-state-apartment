@@ -5,7 +5,7 @@ const Blog = () => {
     return (
         <div>
             <Helmet>
-                <title>City Residence | Blog</title>
+                <title>City Palace | Blog</title>
             </Helmet>
             <h2>This is Blog</h2>
         </div>

@@ -53,7 +53,7 @@ const Login = () => {
   return (
     <div className="flex justify-center items-center ">
       <Helmet>
-        <title>City Residence | Login</title>
+        <title>City Palace | Login</title>
       </Helmet>
       <div className="w-full lg:w-2/6  shadow-xl  p-10 my-16">
         <h2 className="text-3xl lg:text-4xl mb-8 text-center font-bold">Login</h2>

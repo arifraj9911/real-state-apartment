@@ -16,7 +16,6 @@ import GoogleMapReact from "google-map-react";
 import { googleApiKey } from "../../GoogleApiKey/GoogleApiKey";
 import saleBanner from "../../assets/Images/sale_banner.jpg";
 
-
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const ApartmentDetails = () => {
   const estates = useLoaderData();
@@ -29,7 +28,7 @@ const ApartmentDetails = () => {
       lat: 10.99835602,
       lng: 77.01502627,
     },
-    zoom: 11, 
+    zoom: 11,
   };
   //   console.log(estate);
   const {
@@ -55,7 +54,9 @@ const ApartmentDetails = () => {
         <div className="flex flex-col-reverse lg:flex-row justify-between  px-3 lg:px-0 lg:w-2/3">
           <div>
             <div className="flex items-center gap-4">
-              <h2 className="text-[22px] lg:text-2xl font-bold">{estate_title}</h2>
+              <h2 className="text-[22px] lg:text-2xl font-bold">
+                {estate_title}
+              </h2>
               <span className="bg-[#77c720] px-6  py-1 text-white rounded-3xl">
                 {status}
               </span>
@@ -73,12 +74,12 @@ const ApartmentDetails = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-6 my-10 ">
-          <div className="col-span-2">
+          <div className="lg:col-span-2">
             <div className="">
               <img src={estate_image} alt="" />
             </div>
             <div>
-              <div className="bg-white px-8 py-12 border-b">
+              <div className="bg-white px-4 lg:px-8 py-10 lg:py-12 border-b">
                 <h2 className="text-3xl font-bold mb-10">Overview</h2>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                   <span className="flex items-center gap-3">
@@ -149,10 +150,12 @@ const ApartmentDetails = () => {
                 </div>
               </div>
               <div className="bg-white px-4 lg:px-8 py-10 lg:py-12 border-b ">
-                <h2 className="text-3xl font-bold mb-6 lg:mb-10">Description</h2>
+                <h2 className="text-3xl font-bold mb-6 lg:mb-10">
+                  Description
+                </h2>
                 <p>{description}</p>
               </div>
-              <div className="bg-white px-8 py-12 border-b ">
+              <div className="bg-white px-4 lg:px-8 py-10 lg:py-12 border-b ">
                 <h2 className="text-[22px] lg:text-3xl font-bold mb-6 lg:mb-10">
                   Features & Amenities
                 </h2>
@@ -167,8 +170,10 @@ const ApartmentDetails = () => {
                   ))}
                 </div>
               </div>
-              <div className="bg-white px-8 py-12">
-                <h2 className="text-[22px] lg:text-3xl font-bold mb-10">Map Location</h2>
+              <div className="bg-white px-4 lg:px-8 py-10 lg:py-12">
+                <h2 className="text-[22px] lg:text-3xl font-bold mb-10">
+                  Map Location
+                </h2>
                 <div style={{ height: "100vh", width: "100%" }}>
                   <GoogleMapReact
                     bootstrapURLKeys={{ key: googleApiKey }}
@@ -182,13 +187,12 @@ const ApartmentDetails = () => {
                     />
                   </GoogleMapReact>
                 </div>
-               
               </div>
             </div>
           </div>
 
-          <div>
-            <div className="bg-white p-8">
+          <div className="">
+            <div className="bg-white p-8 ">
               <h2 className="text-2xl font-bold">Agent Information</h2>
               <hr className="my-10" />
               <div className="flex items-center gap-6">

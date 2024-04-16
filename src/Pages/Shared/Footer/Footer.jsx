@@ -42,7 +42,7 @@ const Footer = () => {
       <footer className="footer px-10 py-8 gap-8 border-t-2 border-black flex flex-col lg:flex-row text-center lg:text-left  justify-between items-center bg-[#141414] text-white ">
         <aside className="items-center grid-flow-col">
           <p className="flex flex-col gap-2">
-            <span className="text-2xl font-bold">City Palace</span>
+            <span className="text-2xl lg:text-3xl font-bold">City Palace</span>
             <span className="text-sm text-gray-400">
               More Trustable Real State Company
             </span>
