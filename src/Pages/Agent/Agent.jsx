@@ -21,11 +21,11 @@ const Agent = ({ agent }) => {
     location,
   } = agent;
   return (
-    <div className="flex flex-col lg:flex-row gap-12 lg:w-3/4 bg-white p-6  mx-auto">
-      <div className="w-full lg:w-1/3 h-[300px] flex-grow">
+    <div className="flex flex-col  md:flex-row gap-12 lg:w-3/4 bg-white p-6  mx-auto">
+      <div className="w-full  md:w-1/3 h-[300px] flex-grow">
         <img className="w-full h-full" src={agent_img} alt="" />
       </div>
-      <div className="lg:w-3/5">
+      <div className="md:w-1/2 lg:w-3/5">
         <div className="flex items-center justify-between gap-6 mb-2">
           <div className="text-2xl">{agent_name}</div>
           <div className="flex items-center justify-center gap-1 ">

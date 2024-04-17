@@ -159,7 +159,7 @@ const ApartmentDetails = () => {
                 <h2 className="text-[22px] lg:text-3xl font-bold mb-6 lg:mb-10">
                   Features & Amenities
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {facilities.map((facility, idx) => (
                     <span className="flex items-center gap-2" key={idx}>
                       <span className="bg-[#77c720] text-white p-1 text-xs rounded-full">
@@ -174,7 +174,7 @@ const ApartmentDetails = () => {
                 <h2 className="text-[22px] lg:text-3xl font-bold mb-10">
                   Map Location
                 </h2>
-                <div style={{ height: "100vh", width: "100%" }}>
+                <div style={{ height: "400px", width: "100%" }}>
                   <GoogleMapReact
                     bootstrapURLKeys={{ key: googleApiKey }}
                     defaultCenter={defaultProps.center}

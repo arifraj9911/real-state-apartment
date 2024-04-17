@@ -25,7 +25,7 @@ const UpdateProfile = () => {
   };
 
   return (
-    <div className="my-20 lg:w-3/5 mx-auto">
+    <div className="my-20 md:w-3/4 lg:w-3/5 mx-auto">
       <Helmet>
         <title>City Palace | Update</title>
       </Helmet>

@@ -10,7 +10,7 @@ const Footer = () => {
       }}
       className="h-full"
     >
-      <footer className="footer flex flex-col lg:flex-row justify-between px-10 py-16   text-white">
+      <footer className="footer flex flex-col md:flex-row justify-between px-10 py-16   text-white">
         <form>
           <h6 className="font-bold text-2xl lg:text-3xl mb-3 ">
             Sign up & get 15% OFF
@@ -20,7 +20,7 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="your email"
-                className="input input-bordered join-item text-black w-full"
+                className="input input-bordered join-item text-black md:w-3/5 lg:w-full"
               />
               <button className="bg-[#0075FF] hover:bg-[#2264b0] text-white py-2 lg:py-3 px-3 lg:px-6 rounded-md text-[16px] font-bold join-item">
                 Subscribe
