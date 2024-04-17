@@ -21,9 +21,13 @@
         ],
         "estate_image": "https://i.ibb.co/JCmp3p9/room-1.jpg",
         "agent_name": "John Smith",
-        "agent_img": "https://i.ibb.co/09Sj4Sm/agent-1.jpg",
+        
+        "agent_img": "https://i.ibb.co/4gznQvH/smiling-blonde-business-woman-posing-with-crossed-arms-171337-6291.jpg",
         "phone": "+1234567890",
-        "email": "john.smith@example.com"
+        "email": "john.smith@example.com",
+        "agent_rating": 5,
+        "fax":"+1 (555) 864-2079",
+        "office": "+1 07344--82042"
     },
     {
         "id": 2,
@@ -49,7 +53,10 @@
         "agent_name": "Emily Johnson",
         "agent_img": "https://i.ibb.co/RNktRtt/161962.jpg",
         "phone": "+1987654321",
-        "email": "emily.johnson@example.com"
+        "email": "emily.johnson@example.com",
+        "agent_rating": 4,
+        "office": "+1 0734-35042",
+        "fax":"+1 (555) 135-7924"
     },
     {
         "id": 3,
@@ -74,9 +81,12 @@
         ],
         "estate_image": "https://i.ibb.co/hsqMgGw/room-3.jpg",
         "agent_name": "Michael Brown",
-        "agent_img": "https://i.ibb.co/1v3VMNC/21887.jpg",
+        "agent_img": "https://i.ibb.co/v3k59wB/15885.jpg",
         "phone": "+1122334455",
-        "email": "michael.brown@example.com"
+        "email": "michael.brown@example.com",
+        "agent_rating": 5,
+        "office": "+1 (555) 123-4567",
+        "fax":"+1 (555) 369-2580"
     },
     {
         "id": 4,
@@ -100,9 +110,12 @@
         ],
         "estate_image": "https://i.ibb.co/QJP82DQ/room-4.jpg",
         "agent_name": "Jennifer Wilson",
-        "agent_img": "https://i.ibb.co/4gznQvH/smiling-blonde-business-woman-posing-with-crossed-arms-171337-6291.jpg",
+        "agent_img": "https://i.ibb.co/LSWBSYd/104422.jpg",
         "phone": "+1555666777",
-        "email": "jennifer.wilson@example.com"
+        "email": "jennifer.wilson@example.com",
+        "agent_rating": 3,
+        "office": "+1 (555) 987-6543",
+        "fax":"+1 (555) 246-8013"
     },
     {
         "id": 5,
@@ -129,7 +142,10 @@
         "agent_name": "David Miller",
         "agent_img": "https://i.ibb.co/gJjxnZp/amazing-cheerful-business-woman-standing-with-arms-crossed-171337-8479.jpg",
         "phone": "+1444333222",
-        "email": "david.miller@example.com"
+        "email": "david.miller@example.com",
+        "agent_rating": 4.5,
+        "office": "+1 (555) 369-2580",
+        "fax":"+1 (555) 987-6543"
     },
     {
         "id": 6,
@@ -155,6 +171,9 @@
         "agent_name": "Sarah Davis",
         "agent_img": "https://i.ibb.co/fCjbR7x/portrait-young-woman-smiling-23-2149375011.jpg",
         "phone": "+1666777888",
-        "email": "sarah.davis@example.com"
+        "email": "sarah.davis@example.com",
+        "agent_rating": 3.5,
+        "office": "+1 (555) 864-2079",
+        "fax":"+1 (555) 123-4567"
     }
 ]

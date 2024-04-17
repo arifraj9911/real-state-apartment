@@ -8,6 +8,7 @@ import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import ApartmentDetails from "../Pages/ApartmentDetails/ApartmentDetails";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Agents from "../Pages/Agents/Agents";
 
 export const router = createBrowserRouter([
     {
@@ -28,6 +29,11 @@ export const router = createBrowserRouter([
             {
                 path:'/blog',
                 element:<Blog></Blog>
+            },
+            {
+                path:'/agents',
+                loader:()=>fetch('../estate.json'),
+                element:<PrivateRoute><Agents></Agents></PrivateRoute>
             },
             {
                 path:'/update',

@@ -8,9 +8,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { Helmet } from "react-helmet-async";
 import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 
-
 const Login = () => {
-  const { signIn, googleSignIn } = useContext(AuthContext);
+  const { signIn, googleSignIn, githubSignIn } = useContext(AuthContext);
   const [showPass, setShowPass] = useState(false);
   const [errors, setErrors] = useState(null);
   const { register, handleSubmit, reset } = useForm();
@@ -49,6 +48,15 @@ const Login = () => {
 
   const handleGithubSubmit = () => {
     console.log("github login");
+    githubSignIn()
+      .then((res) => {
+        console.log(res.user);
+        navigate(location?.state ? location.state : "/");
+        toast.success("user login successful");
+      })
+      .catch((err) => {
+        toast.error(err.message);
+      });
   };
   return (
     <div className="flex justify-center items-center ">
@@ -56,7 +64,9 @@ const Login = () => {
         <title>City Palace | Login</title>
       </Helmet>
       <div className="w-full lg:w-2/6  shadow-xl  p-10 my-16">
-        <h2 className="text-3xl lg:text-4xl mb-8 text-center font-bold">Login</h2>
+        <h2 className="text-3xl lg:text-4xl mb-8 text-center font-bold">
+          Login
+        </h2>
         <hr />
         <form
           className=" flex flex-col gap-4 mt-12 "
@@ -78,13 +88,11 @@ const Login = () => {
               {...register("password")}
             />
             <span
-                className="absolute right-4 top-[36px] text-2xl"
-                onClick={() => setShowPass(!showPass)}
-              >
-                {showPass ? <IoIosEyeOff /> : <IoIosEye />}
-              </span>
-           
-            
+              className="absolute right-4 top-[36px] text-2xl"
+              onClick={() => setShowPass(!showPass)}
+            >
+              {showPass ? <IoIosEyeOff /> : <IoIosEye />}
+            </span>
           </div>
           <p className="text-sm text-red-500">{errors}</p>
 
