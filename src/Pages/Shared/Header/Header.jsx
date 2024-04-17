@@ -29,6 +29,7 @@ const Header = () => {
   );
   return (
     <div
+    
       style={{
         backgroundImage: `url(${coolBG})`,
         backgroundRepeat: "no-repeat",
@@ -37,7 +38,7 @@ const Header = () => {
       }}
       className="navbar text-white  sticky top-0 z-10   "
     >
-      <div className="navbar-start">
+      <div  className="navbar-start">
         <div className="dropdown z-10">
           <div
             tabIndex={0}
@@ -71,12 +72,12 @@ const Header = () => {
           City<span className="text-[#77c720]">Palace</span>
         </Link >
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div  className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-[16px] font-semibold">
           {menu}
         </ul>
       </div>
-      <div className="navbar-end">
+      <div  className="navbar-end">
         {user ? (
           <span className="flex items-center gap-3 lg:gap-4">
             {" "}

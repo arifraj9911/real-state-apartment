@@ -21,7 +21,7 @@ const Agent = ({ agent }) => {
     location,
   } = agent;
   return (
-    <div className="flex flex-col  md:flex-row gap-12 lg:w-3/4 bg-white p-6  mx-auto">
+    <div data-aos="fade-right" data-aos-duration="500" className="flex flex-col  md:flex-row gap-12 lg:w-3/4 bg-white p-6  mx-auto">
       <div className="w-full  md:w-1/3 h-[300px] flex-grow">
         <img className="w-full h-full" src={agent_img} alt="" />
       </div>

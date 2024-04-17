@@ -39,8 +39,8 @@ const Banner = () => {
         >
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content w-4/5  flex justify-center items-center lg:justify-start text-left text-white">
-            <div className="max-w-lg px-2 lg:px-0">
-              <h1 className="mb-2 lg:mb-5 text-[30px] lg:text-5xl font-bold">Luxurious Palace</h1>
+            <div data-aos="fade-right" data-aos-duration="3000" className="max-w-lg px-2 lg:px-0">
+              <h1 className="mb-2 lg:mb-5 text-[28px] lg:text-5xl font-bold">Luxurious Palace</h1>
               <p className="mb-5 text-xs leading-4 lg:leading-6 lg:text-[16px] ">
               Indulge in the epitome of luxury with our exquisite apartments. From breathtaking views to opulent amenities, each residence exudes elegance and sophistication. 
               </p>
@@ -63,7 +63,7 @@ const Banner = () => {
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content w-4/5  flex justify-center items-center lg:justify-start text-left text-white">
             <div className="max-w-lg px-2 lg:px-0">
-              <h1 className="mb-2 lg:mb-5 text-[30px] lg:text-5xl font-bold">Get Your Comfort</h1>
+              <h1 className="mb-2 lg:mb-5 text-[28px] lg:text-5xl font-bold">Get Your Comfort</h1>
               <p className="mb-5 text-xs leading-4 lg:leading-6 lg:text-[16px] ">
               Discover comfort redefined in our cozy apartments. Thoughtfully designed spaces, warm ambiance, and modern conveniences await you. 
               </p>
@@ -85,9 +85,9 @@ const Banner = () => {
         
         >
           <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content w-4/5  flex justify-center items-center lg:justify-start text-left text-white">
+          <div  className="hero-content w-4/5  flex justify-center items-center lg:justify-start text-left text-white">
             <div className="max-w-lg px-2 lg:px-0">
-              <h1 className="mb-2 lg:mb-5 text-[30px] lg:text-5xl font-bold">Enjoy Your Time</h1>
+              <h1 className="mb-2 lg:mb-5 text-[28px] lg:text-5xl font-bold">Enjoy Your Time</h1>
               <p className="mb-5 text-xs leading-4 lg:leading-6 lg:text-[16px] ">
               Unleash endless enjoyment in our dynamic apartments. With inviting amenities and a lively atmosphere, every moment becomes a celebration of comfort and delight
               </p>

@@ -76,6 +76,7 @@ const Register = () => {
           <div className="flex flex-col gap-1 text-[#403F3F]">
             <label className="font-medium">Your Name</label>
             <input
+            required
               className="bg-[#F3F3F3] p-2 rounded-md outline-none "
               type="text"
               {...register("name", { required: true, maxLength: 20 })}
@@ -84,6 +85,7 @@ const Register = () => {
           <div className="flex flex-col gap-1 text-[#403F3F]">
             <label className="font-medium">Your Email</label>
             <input
+            required
               className="bg-[#F3F3F3] p-2 rounded-md outline-none "
               type="email"
               {...register("email", { required: true })}
@@ -92,6 +94,7 @@ const Register = () => {
           <div className="flex flex-col gap-1 text-[#403F3F]">
             <label className="font-medium">Photo URL</label>
             <input
+            required
               className="bg-[#F3F3F3] p-2 rounded-md outline-none "
               type="text"
               {...register("photo", { required: true })}
@@ -101,6 +104,7 @@ const Register = () => {
             <label className="font-medium">Password</label>
             <div className="w-full relative">
               <input
+              required
                 className="bg-[#F3F3F3] p-3 w-full rounded-md outline-none "
                 type={showPass ? "text" : "password"}
                 {...register("password", {

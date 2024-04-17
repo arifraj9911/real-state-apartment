@@ -29,7 +29,7 @@ const UpdateProfile = () => {
       <Helmet>
         <title>City Palace | Update</title>
       </Helmet>
-      <div className="flex flex-col lg:flex-row justify-center w-full lg:border rounded-lg">
+      <div  data-aos="zoom-in-down" data-aos-duration="500" className="flex flex-col lg:flex-row justify-center w-full lg:border rounded-lg">
         <div className="flex flex-col items-center w-full border-b-2 lg:border-r-2 gap-4 lg:shadow-lg p-8">
           <div className="avatar online mb-4">
             <div className="w-32 rounded-full">
